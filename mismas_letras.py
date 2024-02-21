@@ -1,4 +1,4 @@
-def filtrar_mismas_letras(lista):
+def find_anagrams(lista):
     lista_tot = []
     for palabra in lista:
         lista_mismas_letras = []
@@ -24,6 +24,6 @@ if __name__ == "__main__":
         num = input("Ingrese las palabras a añadir a la lista: ")
         lista.append(num)
         i+=1
-    lista_listas = filtrar_mismas_letras(["amor", "roma", "perro", "amro", "mora", "perrito", "romaa"])
+    lista_listas = find_anagrams(lista)
     lista_primer = lista_listas[0]
     print(lista_primer)
